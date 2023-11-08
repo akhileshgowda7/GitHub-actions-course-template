@@ -19,6 +19,7 @@ jobs:
         run: |
           npm install
           npm run build
+          npm audit fix --force
       - uses: actions/upload-artifact@master
         with: 
           name: webpack artifacts
